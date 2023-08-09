@@ -1,4 +1,4 @@
-# Housing Prices Prediction
+# Housing Prices Prediction [![access-code-here](https://img.shields.io/badge/Access%20Code-Here-1f425f.svg)](https://github.com/naik24/MachineLearning/blob/master/Housing%20Prices%20Prediction/Housing_Prices_Prediction.ipynb)
 
 **Objective**: Predict final price a house
 
@@ -90,7 +90,42 @@
 - **SaleType**: Type of sale</br>
 - **SaleCondition**: Condition of sale</br>
 
+## Data Preprocessing
+
+- **Data Loading**:We start by loading the data using the Pandas library. After loading the dataset, we remove the irrelevant columns.
+- **Data Exploration**: In this step we get more familiar with the data. We identify the datatype of each feature and also determine the missing values from different features.
+- **Imputing Missing Values**: Once all the missing values are identified, we impute the missing values with values depending on the type of data. For example, the missing values in the feature LotFrontage are replaced by the mean of the feature since there are varying sizes of Lot Frontages.
+- **Encoding Categorical Variables**: After all the missing values are imputed, we encode the categorical variables using the getdummies() function of the Pandas library
+- **Splitting Data into Train and Test Set**: Finally, we split the data into training and testing set where training set will be used to train the model and testing set will be used to evaluate predictions.
+
+## Linear Regression
+
+- **R2 Score**: 0.8811433982648353
+- **Mean Absolute Error (MAE)**: 18053.572344074524
+
+## Support Vector Regression
+
+- **Best Parameters (using Grid Search)**:  {'degree': 1, 'kernel': 'linear'}
+- **R2 Score**: 0.7796873450211113
+- **Mean Absolute Error (MAE)**: 24332.061036062158
+
+## Decision Tree Regression
+
+- **Best Parameters (using Grid Search)**:  {'criterion': 'absolute_error', 'max_features': 0.5, 'min_samples_split': 3, 'splitter': 'best'}
+- **R2 Score**: 0.7451960949127842
+- **Mean Absolute Error (MAE)**: 28223.755136986303
+
+## Random Forest Regression
+
+- **Best Parameters (Using Grid Search)**:  {'max_depth': 5, 'min_samples_split': 3, 'n_estimators': 200}
+- **R2 Score**: 0.8428823251541103
+- **Mean Absolute Error (MAE)**: 21381.583523691235
+
+## XGBoost
+
+- **Best Parameters**:  {'colsample_bytree': 0.5, 'eta': 0.1, 'max_depth': 3, 'n_estimators': 300, 'subsample': 1}
+- **R2 Score**: 0.927513948978635 ⭐
+- **Mean Absolute Error (MAE)**: 14120.409581014555 ⭐
+
 ## References:
 [1] House Prices - Advanced Regression Techniques, https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/overview
-
-
