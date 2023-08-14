@@ -30,12 +30,22 @@
 
 ## Decision Tree Regression
 
-- Best Parameters:  {'criterion': 'squared_error', 'max_features': 0.5, 'min_samples_split': 3, 'splitter': 'best'}
-- R2 Score: 0.9345983117683193
-- Mean Absolute Error (MAE): 2.9181138975966574
+- Best Parameters:  {'criterion': 'friedman_mse', 'max_features': 'sqrt', 'min_samples_split': 3, 'splitter': 'best'}
+- R2 Score: 0.9316469233468714
+- Mean Absolute Error (MAE): 3.075381400208986
 
 ## Random Forest Regression
 
-- Best Parameters:  {'max_depth': 5, 'min_samples_split': 3, 'n_estimators': 200}
-- R2 Score: 0.9396165809806046
-- Mean Absolute Error (MAE): 3.281809800817834
+- Best Parameters:  {'max_depth': 5, 'min_samples_split': 3, 'n_estimators': 100}
+- R2 Score: 0.9395283394768524
+- Mean Absolute Error (MAE): 3.2807245334839754
+
+## XGBoost
+
+- Best Parameters:  {'colsample_bytree': 1, 'eta': 0.1, 'max_depth': 7, 'n_estimators': 300, 'subsample': 1}
+- R2 Score: 0.9701050030370023 ⭐
+- Mean Absolute Error (MAE): 2.1224856111373023 ⭐
+
+## References:
+
+[1] Combined Cycle Power Plant Dataset, https://archive.ics.uci.edu/dataset/294/combined+cycle+power+plant
