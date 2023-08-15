@@ -2,7 +2,7 @@
 
 **Objective**: Predict combined energy output of a power plant
 
-## Filde Descriptions
+## File Descriptions
 - powerplantdata.csv: complete dataset
 
 ## Data Fields
