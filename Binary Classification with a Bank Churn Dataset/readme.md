@@ -1,4 +1,4 @@
-# Binary Classification with a Bank Churn Dataset
+# Binary Classification with a Bank Churn Dataset [![access-code-here](https://img.shields.io/badge/Access%20Code-Here-1f425f.svg)](https://github.com/naik24/MachineLearning/blob/master/Binary%20Classification%20with%20a%20Bank%20Churn%20Dataset/Bank_Churn_Classification.ipynb)
 
 Goal: To predict whether a customer continues with their account or closes it (e.g. churns)
 
